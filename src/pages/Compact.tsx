@@ -85,7 +85,7 @@ function Compact () {
               <FrameComponent3 rectangle2="/rectangle-2-23@2x.png" />
               <FrameComponent3 rectangle2="/rectangle-2-24@2x.png" />
               <FrameComponent3 rectangle2="/rectangle-2-25@2x.png" />
-              <p>walter</p>
+           
             </div>
           </div>
         </section>
