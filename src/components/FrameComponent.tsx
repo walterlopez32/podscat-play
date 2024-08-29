@@ -45,6 +45,7 @@ function  FrameComponent () {
         <RectangleIcon/>
         <RectangleIcon/>
         <RectangleIcon/>
+        <p>walter</p>
         <div>
        
         
