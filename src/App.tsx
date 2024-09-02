@@ -8,8 +8,7 @@ function App() {
 
   return (
     <div >
-     <p>pepe</p>
-    <Compact/>
+    
     
 
     </div>
