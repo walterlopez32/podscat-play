@@ -5,7 +5,7 @@
     margin-bottom: 20px;
     width: 200px; /* Ajusta el ancho del contenedor del podcast */
     border: 2px solid #fa0606; /* Borde de 2px con color rojo tomate */
-    padding: 20px; /* Espacio interno alrededor dl contenido */
+    padding: 30px; /* Espacio interno alrededor dl contenido */
     border-radius: 10px; /* Bordes redondeados */
    
     height: 300px;
@@ -35,7 +35,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%; /* Asegúrate de que el texto no desborde */
-    font-size: 14px; /* Ajusta el tamaño de la fuente */
+    font-size: 10px; /* Ajusta el tamaño de la fuente */
     text-align: center;
     color: aliceblue;
   }
