@@ -5,9 +5,22 @@
     margin-bottom: 20px;
     width: 200px; /* Ajusta el ancho del contenedor del podcast */
     border: 2px solid #fa0606; /* Borde de 2px con color rojo tomate */
-    padding: 20px; /* Espacio interno alrededor del contenido */
+    padding: 20px; /* Espacio interno alrededor dl contenido */
     border-radius: 10px; /* Bordes redondeados */
+   
+    height: 300px;
     
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+  
+  .podcastItem:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Para que el elemento esté por encima de otros al hacer hover */
   }
   
   .podcastImage {
