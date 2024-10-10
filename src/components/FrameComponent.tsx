@@ -2,6 +2,7 @@ import FiltersChips from "./FiltersChips";
 import AvatarWAddons from "./AvatarWAddons";
 import RectangleIcon from "./RectangleIcon";
 import styles from "./FrameComponent.module.css";
+//import FormContainer from "./FormContainer";
 
 
 
@@ -45,7 +46,7 @@ function  FrameComponent () {
         <RectangleIcon/>
         <RectangleIcon/>
         <RectangleIcon/>
-        <p>walter</p>
+        
         <div>
        
         
