@@ -4,7 +4,12 @@ import styles from "./Sidebar.module.css";
 
 import React from 'react';
 
-const Sidebar = ({ playlists, onMenuItemClick, currentPlaylist }) => {
+const Sidebar = ({ playlists, onMenuItemClick, currentPlaylist }: {
+  playlists: PlaylistType[];
+  onMenuItemClick: (id: string) => void;
+  currentPlaylist: PlaylistType;
+}) => {
+  // Implementación
   return (
     <div className ="sidebar">
       <button  className = {styles.navbarbutton} onClick={onMenuItemClick}>

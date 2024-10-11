@@ -20,13 +20,13 @@ function  App () {
     title: '',
     description: '',
     image: ''
-  }); // Playlist que se está creando
+  } ); // Playlist que se está creando
 
   const handleMenuItemClick = () => {
     setShowForm(true); // se hace con un ternario ,Muestra el formulario al hacer clic en "Nueva Playlist"
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setCurrentPlaylist({
       ...currentPlaylist,
