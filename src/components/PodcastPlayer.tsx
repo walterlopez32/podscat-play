@@ -4,7 +4,7 @@ import styles from "./PodcastPlayer.module.css";
 
 interface ChannelUrls {
   logo_image: {
-    original?: string; // Propiedad opcional
+    original?: string  // Propiedad opcional
   };
 }
 

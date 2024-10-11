@@ -1,4 +1,4 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+/*import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import styles from "./MenuItem1.module.css";
 
 const MenuItem1: FunctionComponent<MenuItem1Type> = ({
@@ -30,4 +30,4 @@ const MenuItem1: FunctionComponent<MenuItem1Type> = ({
   );
 };  // Se cierra la llave aquí
 
-export default MenuItem1;
+export default MenuItem1;*/

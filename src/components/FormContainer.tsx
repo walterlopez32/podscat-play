@@ -1,5 +1,5 @@
 
-import styles from "./FormContainer.module.css"
+import styles from "./FormContainer.module.css";
 
 interface PlaylistType {
   image?: string; // Opcional
@@ -7,23 +7,24 @@ interface PlaylistType {
   description: string; // Requerido
 }
 
-function FormContainer({ currentPlaylist, onInputChange, onFormSubmit }:{
+interface FormContainerProps {
   currentPlaylist: PlaylistType;
-    onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    onFormSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onFormSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 }
 
-  
-) {
-  
-    const { title, description, image } = currentPlaylist;
-    const isFormComplete = title && description && image;
+function FormContainer({ currentPlaylist, onInputChange, onFormSubmit }: FormContainerProps) {
+  const { title, description, image } = currentPlaylist;
+  const isFormComplete = title && description && image;
 
   return (
-    <form className="form-container" onSubmit={(e) => {
-      e.preventDefault();
-      onFormSubmit();
-    }}>
+    <form
+      className="form-container"
+      onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        onFormSubmit(e); // Pasamos el evento aquí
+      }}
+    >
       <input
         type="text"
         name="title"
@@ -43,12 +44,12 @@ function FormContainer({ currentPlaylist, onInputChange, onFormSubmit }:{
       <input
         type="text"
         name="image"
-        value={image}
+        value={image || ''} // Manejo de valor opcional
         onChange={onInputChange}
         placeholder="URL de la imagen"
         className={styles.search}
       />
-      <button className = {styles.button} type="submit" disabled={!isFormComplete}>
+      <button className={styles.button} type="submit" disabled={!isFormComplete}>
         Add List
       </button>
     </form>
