@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AvatarWAddons from "./AvatarWAddons";
-import styles from "./TopBar.module.css";
+//import AvatarWAddons from "./AvatarWAddons";
+//import styles from "./TopBar.module.css";
 
 const TopBar: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState<string>("");

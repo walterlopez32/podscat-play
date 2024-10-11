@@ -1,4 +1,4 @@
-import FiltersChips from "./FiltersChips";
+/*import FiltersChips from "./FiltersChips";
 //import AvatarWAddons from "./AvatarWAddons";
 import RectangleIcon from "./RectangleIcon";
 import styles from "./FrameComponent.module.css";
@@ -59,4 +59,4 @@ function  FrameComponent () {
   );
 };
 
-export default FrameComponent;
+export default FrameComponent;*/
