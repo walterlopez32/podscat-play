@@ -1,19 +1,17 @@
-
+import React, { useState } from "react";
 import AvatarWAddons from "./AvatarWAddons";
 import styles from "./TopBar.module.css";
 
+const TopBar: React.FC = () => {
+    const [searchTerm, setSearchTerm] = useState<string>("");
 
-
-import React, { useState } from "react";
-
-const TopBar = () => {
-    const [searchTerm, setSearchTerm] = useState("");
-
-    const handleInputChange = (event) => {
+    // Corregimos el tipo de `event` para el cambio en el input
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(event.target.value);
     };
 
-    const handleSubmit = (event) => {
+    // Corregimos el tipo de `event` para la sumisión del formulario
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         // Aquí puedes manejar la búsqueda, por ejemplo, enviando el término a una API
         console.log("Buscar:", searchTerm);
@@ -41,4 +39,3 @@ const TopBar = () => {
 };
 
 export default TopBar;
-
