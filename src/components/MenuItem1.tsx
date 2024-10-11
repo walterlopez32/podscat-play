@@ -1,16 +1,13 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import styles from "./MenuItem1.module.css";
 
-
-
 const MenuItem1: FunctionComponent<MenuItem1Type> = ({
   className = "",
   hasText2 = false,
   leftIcon = true,
   noText = true,
   text = "Home",
-
-}) 
+}) => {  // Se abre la llave aquí
   return (
     <div
       className={[styles.menuItem3, className].join(" ")}
@@ -31,6 +28,6 @@ const MenuItem1: FunctionComponent<MenuItem1Type> = ({
       )}
     </div>
   );
-};
+};  // Se cierra la llave aquí
 
 export default MenuItem1;
