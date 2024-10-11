@@ -12,7 +12,7 @@ import { AiFillHome, AiFillYoutube, AiOutlineFolder,AiFillEdit  } from "react-ic
 import PodcastPlayer from "./components/PodcastPlayer";
 
 
-function  App () {
+const App: React.FC = () => {
 
   const [showForm, setShowForm] = useState(false); // Controla si se muestra el formulario
   const [playlists, setPlaylists] = useState([]); // Lista de playlists creadas

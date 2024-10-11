@@ -1,6 +1,12 @@
 
 import styles from "./FormContainer.module.css"
 
+interface PlaylistType {
+  image?: string; // Opcional
+  title: string; // Requerido
+  description: string; // Requerido
+}
+
 function FormContainer({ currentPlaylist, onInputChange, onFormSubmit }:{
   currentPlaylist: PlaylistType;
     onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
