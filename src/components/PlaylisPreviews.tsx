@@ -1,6 +1,14 @@
-import React from 'react';
+/*interface PlaylistType {
+  title: string;
+  description: string;
+  image?: string;
+}
 
-function PlaylistPreview({ currentPlaylist }) {
+interface PlaylistPreviewsProps {
+  currentPlaylist: PlaylistType;
+}
+
+function PlaylistPreviews({ currentPlaylist }: PlaylistPreviewsProps) {
   const { title, description, image } = currentPlaylist;
 
   return (
@@ -13,4 +21,4 @@ function PlaylistPreview({ currentPlaylist }) {
   );
 }
 
-export default PlaylistPreview;
+export default PlaylistPreview;*/
