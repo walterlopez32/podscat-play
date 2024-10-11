@@ -1,8 +1,15 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from './PodcastItem.module.css'; // Importar los estilos específicos para este componente
 
-function PodcastItem({ title, description, imageUrl, audioUrl }) {
-  const audioRef = useRef(null); // Crear una referencia para el elemento de audio
+interface PodcastItemProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  audioUrl: string;
+}
+
+const PodcastItem: React.FC<PodcastItemProps> = ({ title, description, imageUrl, audioUrl }) => {
+  const audioRef = useRef<HTMLAudioElement | null>(null); // Crear una referencia para el elemento de audio
 
   const playAudio = () => {
     if (audioRef.current) {
@@ -16,8 +23,14 @@ function PodcastItem({ title, description, imageUrl, audioUrl }) {
     }
   };
 
- 
-
+  useEffect(() => {
+    // Limpiar el audio al desmontar el componente
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause(); // Pausar el audio cuando el componente se desmonte
+      }
+    };
+  }, []);
 
   return (
     <li className={styles.podcastItem}>

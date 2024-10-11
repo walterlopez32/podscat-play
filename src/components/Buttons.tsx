@@ -1,6 +1,5 @@
 import styles from "./Buttons.module.css";  
-
-function Buttons({nombre}) {  
+const Buttons = ({ nombre }: { nombre: string }) => {
   return (  
     <button className={styles.Buttons}>  {nombre}
       

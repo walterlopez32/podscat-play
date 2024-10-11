@@ -1,7 +1,14 @@
-import React from 'react';
+
 import styles from "./FormContainer.module.css"
 
-function FormContainer({ currentPlaylist, onInputChange, onFormSubmit }) {
+function FormContainer({ currentPlaylist, onInputChange, onFormSubmit }:{
+  currentPlaylist: PlaylistType;
+    onInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onFormSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+}
+
+  
+) {
   
     const { title, description, image } = currentPlaylist;
     const isFormComplete = title && description && image;
