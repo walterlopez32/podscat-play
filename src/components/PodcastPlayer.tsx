@@ -39,7 +39,7 @@ function PodcastPlayer() {
 
   return (
     <div>
-      {/* Renderizar la lista de podcasts solo si no hay error y ya terminó de cargar */}
+      {/* (walter)Renderizar la lista de podcasts solo si no hay error y ya terminó de cargar */}
       <ul className={styles.podcastList}>
         {podcasts.map(lista => (
           <PodcastItem
