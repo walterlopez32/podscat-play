@@ -69,7 +69,7 @@ function PodcastPlayer() {
             title={lista.title}
             description={lista.description}
             imageUrl={lista.channel.urls.logo_image?.original || 'imagen-defecto.jpg'} // Cambiar la imagen si no está disponible
-            audioUrl={lista.urls.high_mp3}  /* URL del archivo de audio */
+            audioUrl={lista.urls.high_mp3 || ''} // O usar 'null' si el componente acepta valores nulos.  /* URL del archivo de audio */
           />
         ))}
       </ul>
