@@ -1,4 +1,4 @@
-import styles from "./AvatarWAddons.module.css";
+/*import styles from "./AvatarWAddons.module.css";
 
 
 
@@ -19,4 +19,4 @@ function AvatarWAddons () {
   );
 };
 
-export default AvatarWAddons;
+export default AvatarWAddons;*/

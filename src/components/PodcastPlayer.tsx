@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PodcastItem from './PodcastItem';
 import styles from "./PodcastPlayer.module.css";
 
+// Interfaz para las URLs del canal
 interface ChannelUrls {
   logo_image: {
-    original?: string  // Propiedad opcional
+    original?: string; // Propiedad opcional
   };
 }
 
+// Interfaz para cada podcast
 interface ListaType {
   id: string;
   title: string;
@@ -22,7 +24,7 @@ interface ListaType {
 
 function PodcastPlayer() {
   const [podcasts, setPodcasts] = useState<ListaType[]>([]); // Estado para almacenar la lista de podcasts
-  const [loading, setLoading] = useState(true); // Estado para controlar si está cargando
+  const [loading, setLoading] = useState<boolean>(true); // Estado para controlar si está cargando
   const [error, setError] = useState<string | null>(null); // Estado para manejar errores
 
   useEffect(() => {
@@ -66,7 +68,7 @@ function PodcastPlayer() {
             key={lista.id}
             title={lista.title}
             description={lista.description}
-            imageUrl={lista.channel.urls.logo_image.original || 'imagen-defecto.jpg'} // Cambiar la imagen si no está disponible
+            imageUrl={lista.channel.urls.logo_image?.original || 'imagen-defecto.jpg'} // Cambiar la imagen si no está disponible
             audioUrl={lista.urls.high_mp3}  /* URL del archivo de audio */
           />
         ))}
