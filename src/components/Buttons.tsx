@@ -1,9 +1,14 @@
 import styles from "./Buttons.module.css";  
-const Buttons = ({ nombre }: { nombre: string }) => {
+
+// Definimos la interfaz para las props
+interface ButtonsProps {
+  nombre: string; // Asegúrate de que el tipo de `nombre` sea `string`
+}
+
+const Buttons: React.FC<ButtonsProps> = ({ nombre }) => {
   return (  
-    <button className={styles.Buttons}>  {nombre}
-      
-       
+    <button className={styles.Buttons}>  
+      {nombre}
     </button>  
   );  
 }  
