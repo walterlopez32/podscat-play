@@ -6,7 +6,7 @@ const MenuItem1: FunctionComponent<MenuItem1Type> = ({
   hasText2 = false,
   leftIcon = true,
   noText = true,
-  text = "Home",
+  text =77777 "Home",
 }) => {  // Se abre la llave aquí
   return (
     <div
