@@ -1,0 +1,52 @@
+.playbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.playbarInfo {
+  display: flex;
+  align-items: center;
+}
+
+.podcastImage {
+  width: 50px; /* Tamaño fijo de la imagen */
+  height: 50px; /* Mantener las dimensiones proporcionadas */
+  object-fit: cover; /* Recortar la imagen si es necesario */
+  border-radius: 5px; /* Hacer los bordes ligeramente redondeados */
+  margin-right: 10px; /* Espacio entre la imagen y el título */
+}
+
+.podcastDetails h3 {
+  margin: 0;
+  font-size: 16px; /* Ajustar el tamaño del título */
+  color: #fff;
+}
+
+.playbarControls {
+  display: flex;
+  align-items: center;
+}
+
+.playbarControls button {
+  background-color: #555;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.playbarControls button:hover {
+  background-color: #777;
+}
+
