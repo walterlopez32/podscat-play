@@ -1,8 +1,18 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { PodcastContext } from '../context/PodcastContext';
 import styles from './PodcastItem.module.css';
 
-function PodcastItem({ title, description, imageUrl, audioUrl }) {
+interface PodcastItemProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  audioUrl: string;
+}
+
+function PodcastItem({ title, description, imageUrl, audioUrl }: PodcastItemProps) {
+
+
+  
   const { changePodcast } = useContext(PodcastContext);
 
   const handlePlayClick = () => {
